@@ -1,0 +1,59 @@
+/* below link is copied from font.google.com to add fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+:root {
+    --green-1: #26643b;
+    --green-2:#a2de96;
+    --lightGreen-1: #d6e5d8;
+    --lightGreen-2: #f5fcf4;
+    --black-1: #3b413a;
+    --black-2: #3f3c3c;
+    --black-3: #5b6359;
+    --white-1: #e8e8e8;
+}
+body {
+    background-color: var(--lightGreen-2);
+    overflow-x: hidden;
+}
+section {
+     padding: 100px 0;/* between every section 100px padding  */
+}
+
+/* used to give resposiveness means when we switch to smaller screen it will adjust the screen */
+/* when we switch to smaller screen the padding will reduse to 50px in section  */
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+.container {
+    max-width: 1200px; /* content will remain in 1200px on big screen  */
+    width: 90%; /* always cover 90% width on smaller screen*/
+    margin: 0 auto; /* to keep everything in center */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins' , sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-size: 1.8rem;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
